@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal (IMC)</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Índice de Massa Corporal</h1>
+    </header>
+
+    <div class="container">
+        <div class="calculo">
+            <label>Altura:</label>
+            <input id="altura" type="number">
+            <br>
+            <label>Peso:</label>
+            <input id="peso" type="number">
+            <br>
+            <button onclick="limpar()">Limpar</button>
+            <button onclick="calcular()">Calcular</button>
+            <br>
+            <label>Resultado:</label>
+            <input id="resultado" type="number">
+        </div> 
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>OBESIDADE</th>
+                </tr>
+                <tr>
+                    <td>
+                        MENOR QUE 18.5
+                    </td>
+                    <td>
+                        MAGREZA
+                    </td>
+                    <td>
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ENTRE 18.5 E 24.9
+                    </td>
+                    <td>
+                        NORMAL
+                    </td>
+                    <td>
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ENTRE 25.0 E 29.9
+                    </td>
+                    <td>
+                        SOBREPESO
+                    </td>
+                    <td>
+                        I
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ENTRE 30.0 E 39.9
+                    </td>
+                    <td>
+                        OBESIDADE
+                    </td>
+                    <td>
+                        II
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        MAIOR QUE 40.0
+                    </td>
+                    <td>
+                        OBESIDADE GRAVE
+                    </td>
+                    <td>
+                        III
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li>
+                Nome - Kauã Henrique Martins
+            </li>
+            <li>
+                Turma - 2A
+            </li>
+            <li>
+                Escola - SESI SENAI
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
